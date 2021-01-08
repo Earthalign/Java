@@ -1,0 +1,83 @@
+@CHARSET "UTF-8";
+
+body{
+	background-color: #e4e4e4;
+         background-image:url('images.jpg');
+         
+}
+
+.page_content h1{
+    text-align: center;
+    color:white
+}
+
+.button {
+    width: 100px;
+}
+
+.background_content{
+    background-color: #000066;
+    max-width: 710px;
+    min-width: 610px;
+    padding: 5px;
+    border: 2px solid #c0c0c0;
+    margin: 0 auto;
+    border-radius: 15px;
+    
+    
+}
+
+.main_content{
+    background-color: #ffffff;
+    max-width: 700px;
+    min-width: 600px;
+    padding: 15px;
+    border: 2px solid #c0c0c0;
+    margin: 0 auto;
+    border-radius: 5px;	
+}
+.main_content table{
+	width:auto;
+	border: 3px solid #1A237E;
+	margin: 5px 10px 0px 10px;
+	
+}
+
+.main_content table tr th{
+	background: #e4e4e4;	
+}
+
+/*
+Elementy tablicy
+*/
+.odd td{	
+}
+
+.odd:hover{
+	color:#ff0080;
+}
+
+.selodd {
+  background-color: #ff0080;
+}
+
+.main_content input{
+	width: 100px;
+        
+}
+
+h3{
+	color:blue;
+}
+
+
+.glowing-border {
+    border: 2px solid #dadada;
+    border-radius: 7px;
+}
+
+.glowing-border:focus { 
+    outline: blue;
+    border-color: #C62828;
+    box-shadow: 0 0 10px #C62828;
+}
