@@ -17,9 +17,9 @@ class Okno extends JFrame {
 
    
     // Komunikacja z BAZĄ DANYCH
-    private String jdbcUrl = "jdbc:mysql://localhost:3306/ksiegarnia", jdbcUser = "root", jdbcPass = "";
+    private String jdbcUrl = "jdbc:mysql://localhost:3306/ksiegarnia", jdbcUser = "root", jdbcPass = "";  //Łączenie się z bazą danych *głównie w xampie*
     // Komunikaty z applikacji
-    private JTextField komunikat = new JTextField();
+    private JTextField komunikat = new JTextField();  
     
     
     // Panel ogólny
@@ -30,18 +30,18 @@ class Okno extends JFrame {
     
     // Panel klienta
     
-    private JTextField pole_pesel = new JTextField();
+    private JTextField pole_pesel = new JTextField(); //odczytywanie danych z jednej linii 
     private JTextField pole_im = new JTextField();
     private JTextField pole_naz = new JTextField();
     private JTextField pole_ur = new JTextField();
     private JTextField pole_mail = new JTextField();
     private JTextField pole_adr = new JTextField();
     private JTextField pole_tel = new JTextField();
-    private JButton przyc_zapisz_kli = new JButton("zapisz");
+    private JButton przyc_zapisz_kli = new JButton("zapisz");   //przyciski
     private JButton przyc_usun_kli = new JButton("usuń");
-    private DefaultListModel<String> lmodel_kli = new DefaultListModel<>();
+    private DefaultListModel<String> lmodel_kli = new DefaultListModel<>(); //Przygotowana klasa, która ułatwia tworzenie dynamicznych list
     private JList<String> l_kli = new JList<>(lmodel_kli);
-    private JScrollPane sp_kli = new JScrollPane(l_kli);
+    private JScrollPane sp_kli = new JScrollPane(l_kli);  //Panel przewijany - JScrollPane. Służy do przedstawiania komponentów, których rozmiar jest większy niż widoczny w panelu obszar. Do przewijania widoku komponentu przeznaczone są suwaki.
 
     // Panel książęk
     
@@ -54,7 +54,7 @@ class Okno extends JFrame {
         "obyczajowa", "poradnik", "kryminal", 
         "historyczna", "thriller", "romans", "popularnonaukowa","wesoła twórczość", "inne"
       };
-    private JComboBox pole_typ = new JComboBox(typy);
+    private JComboBox pole_typ = new JComboBox(typy); //zaznaczenie danego pola
     private JTextField pole_wyd = new JTextField();
     private JTextField pole_rok = new JTextField();
     private JTextField pole_cena = new JTextField();
@@ -62,7 +62,7 @@ class Okno extends JFrame {
     private JButton przyc_usun_ksi = new JButton("usuń");
     private JButton przyc_zmien_cene = new JButton("zmień cenę");
     private DefaultListModel<String> lmodel_ksi = new DefaultListModel<>();
-    private JList<String> l_ksi = new JList<>(lmodel_ksi);
+    private JList<String> l_ksi = new JList<>(lmodel_ksi); //używany jest specjalny obiekt, określający zasady wykreślania tych komórek.
     private JScrollPane sp_ksi = new JScrollPane(l_ksi);
    
     
@@ -106,7 +106,7 @@ class Okno extends JFrame {
                 model.addElement(s);
             }
         }
-        catch (SQLException ex) { }
+        catch (SQLException ex) { } //wychwytywanie błędów
     }
     // funkcja aktualizująca listę zamówień
     private void AktualnaListaZamowien(JList<String> lis, DefaultListModel<String> model) {
