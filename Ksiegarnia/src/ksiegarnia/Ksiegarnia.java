@@ -7,13 +7,7 @@ import java.awt.event.*;
 
 
 class Okno extends JFrame {
-                                                                /*
-
-                                                                Witold Włuczowski 
-                                                                Java EE SEM4_ROK2_PROJEKT1
-                                                                DodanieFUNKCJONALNOŚCI DO PROJEKTU 
-
-                                                                */
+                                                               
 
    
     // Komunikacja z BAZĄ DANYCH
